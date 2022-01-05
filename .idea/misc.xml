@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_curso.xml" value="0.3828125" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_exit.xml" value="0.3828125" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_menu.xml" value="0.3828125" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_nota.xml" value="0.3828125" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/activity_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/cardview_cursos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/cardview_horario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/cardview_notas.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_configucacion.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_configuracion.xml" value="0.3151041666666667" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_curso.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_horario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_link.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_nota.xml" value="0.33" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_ubicacion.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/menu/bottom_navigation_view.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

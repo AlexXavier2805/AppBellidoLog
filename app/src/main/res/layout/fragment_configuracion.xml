@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.ConfiguracionFragment"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/tv_titulo_fragment_confi"
+        android:textSize="30sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp" />
+
+    <androidx.legacy.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/etdPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edt_nuevopassword_fragment_confi"
+        android:inputType="textPassword"/>
+    <androidx.legacy.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+    <EditText
+        android:id="@+id/edtPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/edt_confirmpassword_fragment_confi"/>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/btnCambiarPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_actualizar_fragment_confi"/>
+
+</LinearLayout>

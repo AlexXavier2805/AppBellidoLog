@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Bellido Log</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iv_logo_login">Imagen Logo</string>
+    <string name="tv_titulo_login">¡Al alcance de tu mano a toda hora!</string>
+    <string name="et_usuario_hint_login">Usuario</string>
+    <string name="et_password_hint_login">Password</string>
+    <string name="btn_ingresar_login">Ingresar</string>
+    <string name="tv_nombre_alumna_menu">Cynthia Novillo Vera</string>
+    <string name="tv_id_alumna_menu">ID: 749382BbahHiyy</string>
+    <string name="btn_horario_menu">Horario</string>
+    <string name="btn_nota_menu">Notas</string>
+    <string name="btn_curso_menu">Cursos</string>
+    <string name="iv_perfil_desc_menu">Imagen Perfil</string>
+    <string name="btn_ubicacion_menu">Ubicación</string>
+    <string name="bnv_menu">Menu</string>
+    <string name="btn_config_menu">Configuraciones</string>
+    <!--LINK RED SOCIAL-->
+    <string name="btn_link_menu">Redes Sociales</string>
+    <string name="descripcion_iv_mpb_menu">Imagen Menu MPB</string>
+    <string name="btn_salir_menu">Boton Salir Menu</string>
+    <string name="tv_idcurso_cardview">ID Curso:</string>
+    <string name="tv_nombrecurso_cardview">Nombre Curso:</string>
+    <string name="tv_descripcioncurso_cardview">Descripción:</string>
+    <string name="tv_gradocurso_cardview">Grado:</string>
+    <string name="iv_curso_cardview">TODO</string>
+    <string name="iv_flecha_cardview_horario">Descripcion Imagen CardView</string>
+    <string name="tv_curso_cardview_horario">Curso:</string>
+    <string name="tv_docente_cardview_horario">Docente:</string>
+    <string name="tv_horainico_cardview_horario">Hora Inicio:</string>
+    <string name="tv_horafin_cardview_horario">Hora Fin:</string>
+    <string name="tv_aula_cardview_horario">Aula:</string>
+    <string name="tv_primerb_cardview_nota">Primer Bimestre</string>
+    <string name="tv_segundob_cardview_nota">Segundo Bimestre</string>
+    <string name="tv_tercerb_cardview_nota">Tercer Bimestre</string>
+    <string name="tv_cuartob_cardview_nota">Cuarto Bimestre</string>
+    <string name="tv_titulo_fragment_confi">Actualizar de Contraseña</string>
+    <string name="edt_nuevopassword_fragment_confi">Nueva contraseña</string>
+    <string name="edt_confirmpassword_fragment_confi">Confirmar nueva contraseña</string>
+    <string name="btn_actualizar_fragment_confi">Actualizar</string>
+    <string name="tv_titulo_lista_cursos">Mis Cursos</string>
+    <string name="tv_titulo_lista_horario">Mi Horario</string>
+    <string name="tv_titulo_lista_nota">Mis Notas</string>
+    <string name="tv_titulo_fragment_foto">Foto de Perfil</string>
+    <string name="iv_fotoalumna_fragment_foto">Foto de Alumna</string>
+    <string name="btn_seleccionar_fragment_foto">SELECCIONAR FOTO</string>
+    <string name="btn_actualizar_fragment_foto">ACTUALIZAR FOTO</string>
+</resources>

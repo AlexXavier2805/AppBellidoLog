@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity"
+    android:orientation="vertical"
+    android:background="#1a1a1a">
+
+    <ImageView
+        android:id="@+id/ivLogoLogin"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+
+        app:srcCompat="@drawable/logosi"
+        android:contentDescription="@string/iv_logo_login"/>
+
+    <TextView
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:text="@string/tv_titulo_login"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="410dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:background="@drawable/bordes_redondos"
+        android:textColor="@color/white"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:inputType="textPersonName"
+        android:textColorHint="#ffffff"
+        android:hint="@string/et_usuario_hint_login"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:autofillHints="username"/>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="410dp"
+        android:layout_height="15dp"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bordes_redondos"
+        android:hint="@string/et_password_hint_login"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:autofillHints="password"/>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="410dp"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/btn_ingresar_login"
+        android:textColor="#ffffff"
+        app:backgroundTint="#017DF6"
+        android:background="@drawable/bordeb"/>
+
+</LinearLayout>
