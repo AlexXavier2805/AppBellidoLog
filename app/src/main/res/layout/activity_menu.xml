@@ -20,9 +20,9 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:background="#F3BD39"
+            android:contentDescription="@string/descripcion_iv_mpb_menu"
             android:scaleType="center"
-            app:srcCompat="@drawable/lop"
-            android:contentDescription="@string/descripcion_iv_mpb_menu" />
+            app:srcCompat="@drawable/lop" />
 
         <ImageButton
             android:id="@+id/btnLogOut"

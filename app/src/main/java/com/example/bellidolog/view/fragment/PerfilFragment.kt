@@ -116,4 +116,5 @@ class PerfilFragment : Fragment(), PerfilView {
     override fun error(msgError: String) {
         Toast.makeText(this.requireContext(), msgError, Toast.LENGTH_SHORT).show()
     }
+
 }

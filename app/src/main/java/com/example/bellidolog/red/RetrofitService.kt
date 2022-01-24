@@ -35,7 +35,7 @@ interface RetrofitService {
         fun getIntance(): RetrofitService{
             if(retrofietService == null){
                 val retrofit = Retrofit.Builder()
-                    .baseUrl("http://Direccion IP/rest/")
+                    .baseUrl("https://mariaparadobellido.herokuapp.com/rest/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
                 retrofietService = retrofit.create(RetrofitService::class.java)

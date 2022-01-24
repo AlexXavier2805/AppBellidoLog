@@ -24,7 +24,7 @@ class MainInteractorImpl(private val presenter: MainPresenterImpl) : MainInterac
             }
 
             override fun onFailure(call: Call<JwtResponse>, t: Throwable) {
-                presenter.tokenError("Error")
+                presenter.tokenError("Error api authenticacion")
                 t.printStackTrace()
             }
         })

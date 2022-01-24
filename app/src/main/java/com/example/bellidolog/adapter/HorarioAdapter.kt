@@ -24,6 +24,9 @@ class HorarioAdapter(private val horarios: List<HorarioEntity>) : RecyclerView.A
             when(horarios.dia){
                 "LUNES" -> itemView.setBackgroundColor(Color.GREEN)
                 "MARTES" -> itemView.setBackgroundColor(Color.RED)
+                "MIERCOLES" -> itemView.setBackgroundColor(Color.BLUE)
+                "JUEVES" -> itemView.setBackgroundColor(Color.GRAY)
+                "VIERNES" -> itemView.setBackgroundColor(Color.MAGENTA)
             }
             tvCurso.text = horarios.asignacion.curso.nombre
             tvDocente.text = horarios.asignacion.trabajador.nombre

@@ -3,11 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragment.ConfiguracionFragment"
     android:orientation="vertical"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#1a1a1a">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,7 +18,9 @@
         android:text="@string/tv_titulo_fragment_confi"
         android:textSize="30sp"
         android:paddingTop="15dp"
-        android:paddingBottom="15dp" />
+        android:paddingBottom="15dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
     <androidx.legacy.widget.Space
         android:layout_width="0dp"
@@ -27,24 +31,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/edt_nuevopassword_fragment_confi"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
     <androidx.legacy.widget.Space
         android:layout_width="0dp"
-        android:layout_height="20dp"/>
+        android:layout_height="15dp"/>
+
     <EditText
         android:id="@+id/edtPassword2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="@string/edt_confirmpassword_fragment_confi"/>
+        android:hint="@string/edt_confirmpassword_fragment_confi"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
 
     <androidx.legacy.widget.Space
         android:layout_width="0dp"
         android:layout_height="40dp"/>
+
     <Button
         android:id="@+id/btnCambiarPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_actualizar_fragment_confi"/>
+        android:text="@string/btn_actualizar_fragment_confi"
+        app:backgroundTint="#F57C00"
+        android:textStyle="bold"/>
 
 </LinearLayout>
