@@ -3,9 +3,9 @@ package com.example.bellidolog.presenter.impl
 import com.example.bellidolog.model.entity.CursoEntity
 import com.example.bellidolog.model.interactor.impl.CursoInteractorImpl
 import com.example.bellidolog.presenter.CursoPresenter
-import com.example.bellidolog.view.fragment.CursoFragment
+import com.example.bellidolog.view.fragment.impl.CursoFragmentView
 
-class CursoPresenterImpl(private val cursoFragment: CursoFragment) : CursoPresenter {
+class CursoPresenterImpl(private val cursoFragmentView: CursoFragmentView) : CursoPresenter {
 
     private val interactor = CursoInteractorImpl(this)
 
@@ -14,10 +14,10 @@ class CursoPresenterImpl(private val cursoFragment: CursoFragment) : CursoPresen
     }
 
     override fun obtenerListaCursos(lista: List<CursoEntity>?) {
-        cursoFragment.obtenerListaCursos(lista)
+        cursoFragmentView.obtenerListaCursos(lista)
     }
 
     override fun listaCursosError(error: String) {
-        cursoFragment.listaCursosError(error)
+        cursoFragmentView.listaCursosError(error)
     }
 }

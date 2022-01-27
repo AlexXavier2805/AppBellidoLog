@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.content.Context
 import android.os.Bundle
@@ -12,9 +12,10 @@ import com.example.bellidolog.adapter.CursoAdapter
 import com.example.bellidolog.databinding.FragmentCursoBinding
 import com.example.bellidolog.model.entity.CursoEntity
 import com.example.bellidolog.presenter.impl.CursoPresenterImpl
+import com.example.bellidolog.view.fragment.ICursoView
 
 
-class CursoFragment : Fragment(), CursoView {
+class CursoFragmentView : Fragment(), ICursoView {
 
     private lateinit var binding: FragmentCursoBinding
 
@@ -26,6 +27,8 @@ class CursoFragment : Fragment(), CursoView {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentCursoBinding.inflate(inflater, container, false)
+
+        binding.pbCurso.visibility = View.VISIBLE
 
         binding.rvCursos.setHasFixedSize(true)
         binding.rvCursos.layoutManager = LinearLayoutManager(this.requireContext())
@@ -44,6 +47,7 @@ class CursoFragment : Fragment(), CursoView {
     }
 
     override fun obtenerListaCursos(lista: List<CursoEntity>?) {
+        binding.pbCurso.visibility = View.INVISIBLE
         if(lista != null){
             val adapter = CursoAdapter(lista)
             binding.rvCursos.adapter = adapter

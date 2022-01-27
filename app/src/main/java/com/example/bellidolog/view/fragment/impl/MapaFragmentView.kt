@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,7 +12,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
-class MapaFragment : Fragment() {
+class MapaFragmentView : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
         /**

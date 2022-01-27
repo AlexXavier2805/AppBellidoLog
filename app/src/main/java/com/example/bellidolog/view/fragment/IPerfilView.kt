@@ -1,6 +1,6 @@
 package com.example.bellidolog.view.fragment
 
-interface PerfilView {
+interface IPerfilView {
 
     fun successful(msgSuccessful: String)
     fun error(msgError: String)

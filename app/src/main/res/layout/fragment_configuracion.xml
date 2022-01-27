@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.fragment.ConfiguracionFragment"
+    tools:context=".view.fragment.impl.ConfiguracionFragmentView"
     android:orientation="vertical"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:gravity="center"
+    android:paddingTop="20dp"
     android:background="#1a1a1a">
 
     <TextView
@@ -32,8 +32,9 @@
         android:layout_height="wrap_content"
         android:hint="@string/edt_nuevopassword_fragment_confi"
         android:inputType="textPassword"
-        android:textColorHint="#ffffff"
+        android:textColorHint="#000000"
         android:textSize="20sp"
+        android:background="@drawable/borde_input"
         android:textColor="@color/white"/>
 
     <androidx.legacy.widget.Space
@@ -46,8 +47,9 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="@string/edt_confirmpassword_fragment_confi"
-        android:textColorHint="#ffffff"
+        android:textColorHint="#000000"
         android:textSize="20sp"
+        android:background="@drawable/borde_input"
         android:textColor="@color/white"/>
 
     <androidx.legacy.widget.Space
@@ -57,9 +59,12 @@
     <Button
         android:id="@+id/btnCambiarPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/btn_actualizar_fragment_confi"
-        app:backgroundTint="#F57C00"
-        android:textStyle="bold"/>
+        android:textSize="17sp"
+        app:backgroundTint="#52BE80"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_update_24"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"/>
 
 </LinearLayout>

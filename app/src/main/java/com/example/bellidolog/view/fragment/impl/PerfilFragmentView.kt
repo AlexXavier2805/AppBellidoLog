@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.content.Context
 import android.content.Intent
@@ -19,9 +19,10 @@ import com.example.bellidolog.R
 import com.example.bellidolog.databinding.FragmentPerfilBinding
 import com.example.bellidolog.model.entity.AlumnoEntity
 import com.example.bellidolog.presenter.impl.PerfilPresenterImpl
+import com.example.bellidolog.view.fragment.IPerfilView
 import java.io.ByteArrayOutputStream
 
-class PerfilFragment : Fragment(), PerfilView {
+class PerfilFragmentView : Fragment(), IPerfilView {
 
     private val PICK_IMAGE = 1
 

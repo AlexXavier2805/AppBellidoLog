@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.content.Context
 import android.os.Bundle
@@ -12,8 +12,9 @@ import com.example.bellidolog.adapter.HorarioAdapter
 import com.example.bellidolog.databinding.FragmentHorarioBinding
 import com.example.bellidolog.model.entity.HorarioEntity
 import com.example.bellidolog.presenter.impl.HorarioPresenterImpl
+import com.example.bellidolog.view.fragment.IHorarioView
 
-class HorarioFragment : Fragment(), HorarioView {
+class HorarioFragmentView : Fragment(), IHorarioView {
 
     private lateinit var binding: FragmentHorarioBinding
 
@@ -25,6 +26,8 @@ class HorarioFragment : Fragment(), HorarioView {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentHorarioBinding.inflate(inflater, container, false)
+
+        binding.pbHorario.visibility = View.VISIBLE
 
         binding.rvHorario.setHasFixedSize(true)
         binding.rvHorario.layoutManager = LinearLayoutManager(this.requireContext())
@@ -43,6 +46,7 @@ class HorarioFragment : Fragment(), HorarioView {
     }
 
     override fun obtenerHorario(lista: List<HorarioEntity>?) {
+        binding.pbHorario.visibility = View.INVISIBLE
         if(lista != null){
             val adapter = HorarioAdapter(lista)
             binding.rvHorario.adapter = adapter

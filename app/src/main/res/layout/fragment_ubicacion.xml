@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.UbicacionFragment"
+    tools:context=".view.fragment.impl.UbicacionFragmentView"
     android:gravity="top|center"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ubicacion Colegio"
-        android:textSize="24sp"
+        android:text="@string/tv_ubicacion_colegio"
+        android:textSize="18sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:gravity="center"

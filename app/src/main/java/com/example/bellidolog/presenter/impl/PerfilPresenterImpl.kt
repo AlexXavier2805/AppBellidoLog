@@ -3,9 +3,9 @@ package com.example.bellidolog.presenter.impl
 import com.example.bellidolog.model.entity.AlumnoEntity
 import com.example.bellidolog.model.interactor.impl.PerfilInteractorImpl
 import com.example.bellidolog.presenter.PerfilPresenter
-import com.example.bellidolog.view.fragment.PerfilFragment
+import com.example.bellidolog.view.fragment.impl.PerfilFragmentView
 
-class PerfilPresenterImpl(private val view: PerfilFragment) :PerfilPresenter {
+class PerfilPresenterImpl(private val view: PerfilFragmentView) :PerfilPresenter {
 
     private val interactor = PerfilInteractorImpl(this)
 

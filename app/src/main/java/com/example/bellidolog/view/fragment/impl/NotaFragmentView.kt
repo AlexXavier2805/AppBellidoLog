@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.content.Context
 import android.os.Bundle
@@ -12,8 +12,9 @@ import com.example.bellidolog.adapter.NotaAdapter
 import com.example.bellidolog.databinding.FragmentNotaBinding
 import com.example.bellidolog.model.entity.NotaEntity
 import com.example.bellidolog.presenter.impl.NotaPresenterImpl
+import com.example.bellidolog.view.fragment.INotaView
 
-class NotaFragment : Fragment(), NotaView {
+class NotaFragmentView : Fragment(), INotaView {
 
     private lateinit var binding: FragmentNotaBinding
 
@@ -25,6 +26,9 @@ class NotaFragment : Fragment(), NotaView {
     ): View {
         // Inflate the layout for this fragment
         binding = FragmentNotaBinding.inflate(inflater, container, false)
+
+        binding.pbNotas.visibility = View.VISIBLE
+
         binding.rvNota.setHasFixedSize(true)
         binding.rvNota.layoutManager = LinearLayoutManager(this.requireContext())
 
@@ -43,6 +47,7 @@ class NotaFragment : Fragment(), NotaView {
     }
 
     override fun obtenerNotas(lista: List<NotaEntity>?) {
+        binding.pbNotas.visibility = View.INVISIBLE
         if(lista != null){
             val adapter = NotaAdapter(lista)
             binding.rvNota.adapter = adapter

@@ -1,6 +1,6 @@
 package com.example.bellidolog.view.fragment
 
-interface ConfiguracionView {
+interface IConfiguracionView {
 
     fun successful(msgSuccessful:String)
     fun error(error:String)

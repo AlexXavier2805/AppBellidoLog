@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -57,14 +57,14 @@ class MenuFragment : Fragment() {
         //Poniendo el escucha los eventos clic de mis botones del xml
         binding.btnCurso.setOnClickListener {
             //Guardando la instancia de CursoFragment y el id de grado para el metodo
-            val instanciaCursoFragment = CursoFragment()
+            val instanciaCursoFragment = CursoFragmentView()
             val gradoId = matricula.seccion.grado.gradoId
             //Ejecutando el Metodo openCursoFragment pasando una instancia de CursoFragment y el id de grado del objeto matricula
             openCursoFragment(instanciaCursoFragment,gradoId)
         }
         //-- TERMINADO
         binding.btnNota.setOnClickListener {
-            val instanciaNotaFragment = NotaFragment()
+            val instanciaNotaFragment = NotaFragmentView()
             val matriculaId = matricula.matriculaId
             openNotaFragment(instanciaNotaFragment,matriculaId)
         }
@@ -73,14 +73,14 @@ class MenuFragment : Fragment() {
         binding.btnLink.setOnClickListener { abrirLink()}
 
         binding.btnConfiguracion.setOnClickListener {
-            val instaciaConfiguracionFragment = ConfiguracionFragment()
+            val instaciaConfiguracionFragment = ConfiguracionFragmentView()
             val usuario = matricula.alumno.usuario
             openConfiguration(instaciaConfiguracionFragment,usuario)
         }
 
         //-- TERMINADO
         binding.btnCambiarFoto.setOnClickListener {
-            val instaciaPerfilFragment = PerfilFragment()
+            val instaciaPerfilFragment = PerfilFragmentView()
             val alumno = matricula.alumno
             openFotoFragment(instaciaPerfilFragment,alumno)
         }

@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import com.example.bellidolog.R
 import com.example.bellidolog.databinding.ActivityMenuBinding
 import com.example.bellidolog.model.entity.MatriculaEntity
-import com.example.bellidolog.view.fragment.HorarioFragment
-import com.example.bellidolog.view.fragment.MenuFragment
-import com.example.bellidolog.view.fragment.UbicacionFragment
+import com.example.bellidolog.view.fragment.impl.HorarioFragmentView
+import com.example.bellidolog.view.fragment.impl.MenuFragment
+import com.example.bellidolog.view.fragment.impl.UbicacionFragmentView
 
-class MenuActivity : AppCompatActivity() {
+class MenuActivityView : AppCompatActivity() {
 
     private lateinit var binding: ActivityMenuBinding
 
@@ -39,13 +39,13 @@ class MenuActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_schedule ->{
-                    val fragment = HorarioFragment()
+                    val fragment = HorarioFragmentView()
                     val seccionId = matricula.seccion.seccionId
                     openScheduleFragment(fragment, seccionId)
                     true
                 }
                 R.id.nav_ubi ->{
-                    val fragment = UbicacionFragment()
+                    val fragment = UbicacionFragmentView()
                     openFragment(fragment)
                     true
                 }

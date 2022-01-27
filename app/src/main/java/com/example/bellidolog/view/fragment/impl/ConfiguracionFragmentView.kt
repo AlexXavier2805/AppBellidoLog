@@ -1,4 +1,4 @@
-package com.example.bellidolog.view.fragment
+package com.example.bellidolog.view.fragment.impl
 
 import android.content.Context
 import android.os.Bundle
@@ -10,9 +10,10 @@ import android.widget.Toast
 import com.example.bellidolog.databinding.FragmentConfiguracionBinding
 import com.example.bellidolog.model.entity.UsuarioEntity
 import com.example.bellidolog.presenter.impl.ConfiguracionPresenterImpl
+import com.example.bellidolog.view.fragment.IConfiguracionView
 
 
-class ConfiguracionFragment : Fragment(), ConfiguracionView {
+class ConfiguracionFragmentView : Fragment(), IConfiguracionView {
 
     private lateinit var binding: FragmentConfiguracionBinding
 

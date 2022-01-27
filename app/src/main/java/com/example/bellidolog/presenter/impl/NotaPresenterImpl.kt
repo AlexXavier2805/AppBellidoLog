@@ -3,9 +3,9 @@ package com.example.bellidolog.presenter.impl
 import com.example.bellidolog.model.entity.NotaEntity
 import com.example.bellidolog.model.interactor.impl.NotaInteractorImpl
 import com.example.bellidolog.presenter.NotaPresenter
-import com.example.bellidolog.view.fragment.NotaFragment
+import com.example.bellidolog.view.fragment.impl.NotaFragmentView
 
-class NotaPresenterImpl(private val notaFragment: NotaFragment) : NotaPresenter {
+class NotaPresenterImpl(private val notaFragmentView: NotaFragmentView) : NotaPresenter {
 
     val interactor = NotaInteractorImpl(this)
     override fun buscarNotas(token: String, matriculaId: Int) {
@@ -13,11 +13,11 @@ class NotaPresenterImpl(private val notaFragment: NotaFragment) : NotaPresenter 
     }
 
     override fun obtenerNotas(lista: List<NotaEntity>?) {
-        notaFragment.obtenerNotas(lista)
+        notaFragmentView.obtenerNotas(lista)
     }
 
     override fun notaError(error: String) {
-        notaFragment.notaError(error)
+        notaFragmentView.notaError(error)
     }
 
 

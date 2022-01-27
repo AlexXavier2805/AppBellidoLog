@@ -11,7 +11,7 @@ import com.example.bellidolog.model.entity.JwtResponse
 import com.example.bellidolog.model.entity.MatriculaEntity
 import com.example.bellidolog.presenter.impl.MainPresenterImpl
 
-class MainActivity : AppCompatActivity(), MainView {
+class MainActivityView : AppCompatActivity(), IMainView {
 
     private val presenter = MainPresenterImpl(this)
 
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity(), MainView {
             //Ejecutando el metodo autenticar de presenter pasando como argumento el objeto de JwtRequest
             presenter.autenticar(jwtRequest)
         }else{
-            Toast.makeText(this@MainActivity, "Faltan completar Datos", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivityView, "Faltan completar Datos", Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -57,13 +57,13 @@ class MainActivity : AppCompatActivity(), MainView {
             //ejecutando el método busarMatricula del presenter
             presenter.buscarMatricula(token,usuario)
         }else{
-            Toast.makeText(this@MainActivity, "Usuario Invalido", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivityView, "Usuario Invalido", Toast.LENGTH_SHORT).show()
         }
     }
 
     //Respuesta de error del método autenticar
     override fun tokenError(error: String) {
-        Toast.makeText(this@MainActivity, error, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@MainActivityView, error, Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
@@ -87,19 +87,19 @@ class MainActivity : AppCompatActivity(), MainView {
             bundle.putSerializable("matricula",matriculaEntity)
 
             //Crear un objeto de intent para pasar a otra actividad
-            val intent = Intent(this@MainActivity,MenuActivity::class.java)
+            val intent = Intent(this@MainActivityView,MenuActivityView::class.java)
             //Pasar como put Extra el bundle que almacena nuestro objeto matricula
             intent.putExtras(bundle)
             //Iniciar la actididad con el objeto intent
             startActivity(intent)
         }else{
-            Toast.makeText(this@MainActivity, "Usuario Invalido", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivityView, "Usuario Invalido", Toast.LENGTH_SHORT).show()
         }
     }
 
     //Respuesta de error del método buscarMatricula
     override fun matriculaError(error: String) {
-        Toast.makeText(this@MainActivity, error, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@MainActivityView, error, Toast.LENGTH_SHORT).show()
     }
 
 

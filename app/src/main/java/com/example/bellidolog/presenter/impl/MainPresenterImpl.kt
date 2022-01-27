@@ -5,9 +5,9 @@ import com.example.bellidolog.model.entity.JwtResponse
 import com.example.bellidolog.model.entity.MatriculaEntity
 import com.example.bellidolog.model.interactor.impl.MainInteractorImpl
 import com.example.bellidolog.presenter.MainPresenter
-import com.example.bellidolog.view.activity.MainActivity
+import com.example.bellidolog.view.activity.MainActivityView
 
-class MainPresenterImpl(private val view: MainActivity) : MainPresenter {
+class MainPresenterImpl(private val view: MainActivityView) : MainPresenter {
 
     private val interactor = MainInteractorImpl(this)
 

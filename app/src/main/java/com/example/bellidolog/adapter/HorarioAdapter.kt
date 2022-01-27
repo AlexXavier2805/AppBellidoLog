@@ -22,11 +22,11 @@ class HorarioAdapter(private val horarios: List<HorarioEntity>) : RecyclerView.A
         fun bind(horarios: HorarioEntity){
             tvDia.text = horarios.dia.substring(0,3)
             when(horarios.dia){
-                "LUNES" -> itemView.setBackgroundColor(Color.GREEN)
-                "MARTES" -> itemView.setBackgroundColor(Color.RED)
-                "MIERCOLES" -> itemView.setBackgroundColor(Color.BLUE)
-                "JUEVES" -> itemView.setBackgroundColor(Color.GRAY)
-                "VIERNES" -> itemView.setBackgroundColor(Color.MAGENTA)
+                "LUNES" -> itemView.setBackgroundColor(Color.rgb(133, 193, 233))
+                "MARTES" -> itemView.setBackgroundColor(Color.rgb(72, 201, 176))
+                "MIERCOLES" -> itemView.setBackgroundColor(Color.rgb(195, 155, 211))
+                "JUEVES" -> itemView.setBackgroundColor(Color.rgb(247, 220, 111))
+                "VIERNES" -> itemView.setBackgroundColor(Color.rgb(240, 178, 122))
             }
             tvCurso.text = horarios.asignacion.curso.nombre
             tvDocente.text = horarios.asignacion.trabajador.nombre

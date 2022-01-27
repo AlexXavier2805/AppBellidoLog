@@ -25,7 +25,7 @@
     <string name="tv_descripcioncurso_cardview">Descripción:</string>
     <string name="tv_gradocurso_cardview">Grado:</string>
     <string name="iv_curso_cardview">TODO</string>
-    <string name="iv_flecha_cardview_horario">Descripcion Imagen CardView</string>
+    <string name="iv_flecha_cardview_horario">Descripción Imagen CardView</string>
     <string name="tv_curso_cardview_horario">Curso:</string>
     <string name="tv_docente_cardview_horario">Docente:</string>
     <string name="tv_horainico_cardview_horario">Hora Inicio:</string>
@@ -46,4 +46,5 @@
     <string name="iv_fotoalumna_fragment_foto">Foto de Alumna</string>
     <string name="btn_seleccionar_fragment_foto">SELECCIONAR FOTO</string>
     <string name="btn_actualizar_fragment_foto">ACTUALIZAR FOTO</string>
+    <string name="tv_ubicacion_colegio">Ubicación del colegio Maria Parado de Bellido</string>
 </resources>
