@@ -1,4 +1,4 @@
-package com.example.bellidolog.adapter
+package com.example.bellidolog.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View

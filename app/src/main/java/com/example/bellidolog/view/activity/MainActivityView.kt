@@ -57,7 +57,7 @@ class MainActivityView : AppCompatActivity(), IMainView {
             //ejecutando el método busarMatricula del presenter
             presenter.buscarMatricula(token,usuario)
         }else{
-            Toast.makeText(this@MainActivityView, "Usuario Invalido", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivityView, "Usuario o contraseña invalidos", Toast.LENGTH_SHORT).show()
         }
     }
 
