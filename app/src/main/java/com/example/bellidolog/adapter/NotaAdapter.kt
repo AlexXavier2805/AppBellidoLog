@@ -17,7 +17,7 @@ class NotaAdapter(private val notas: List<NotaEntity>) : RecyclerView.Adapter<No
         private val tvTercerBimestre: TextView = itemView.findViewById(R.id.tvTercerBimestre)
         private val tvCuartoBimestre: TextView = itemView.findViewById(R.id.tvCuartoBimestre)
         fun bind(nota: NotaEntity){
-            tvNombreCurso.text = nota.curso.nombre
+            tvNombreCurso.text = nota.curso.nombre.uppercase()
             tvPrimerBimestre.text = nota.primerBimestre.toString()
             tvSegundoBimestre.text = nota.segundoBimestre.toString()
             tvTercerBimestre.text = nota.tercerBimestre.toString()

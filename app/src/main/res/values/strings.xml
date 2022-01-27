@@ -40,8 +40,8 @@
     <string name="edt_confirmpassword_fragment_confi">Confirmar nueva contraseña</string>
     <string name="btn_actualizar_fragment_confi">Actualizar</string>
     <string name="tv_titulo_lista_cursos">Mis Cursos</string>
-    <string name="tv_titulo_lista_horario">Mi Horario</string>
-    <string name="tv_titulo_lista_nota">Mis Notas</string>
+    <string name="tv_titulo_lista_horario">Horario Escolar</string>
+    <string name="tv_titulo_lista_nota">Mis calificaciones Bimestrales</string>
     <string name="tv_titulo_fragment_foto">Foto de Perfil</string>
     <string name="iv_fotoalumna_fragment_foto">Foto de Alumna</string>
     <string name="btn_seleccionar_fragment_foto">SELECCIONAR FOTO</string>

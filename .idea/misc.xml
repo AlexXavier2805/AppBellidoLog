@@ -7,9 +7,11 @@
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable-v24/ic_baseline_cancel_24.xml" value="0.3828125" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable-v24/ic_baseline_check_24.xml" value="0.3828125" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable-v24/ic_baseline_image_search_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/bnv_tab_item_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/borde_input.xml" value="0.3828125" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/bordeb.xml" value="0.3828125" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/bordes_redondos.xml" value="0.3828125" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_cambiar.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_curso.xml" value="0.3828125" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_exit.xml" value="0.3828125" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/drawable/ic_menu.xml" value="0.3828125" />
@@ -31,6 +33,7 @@
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/layout/fragment_ubicacion.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/menu/bottom_navigation_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Raul/Desktop/CosasFinal/AplicacionMovilMPDB/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>
