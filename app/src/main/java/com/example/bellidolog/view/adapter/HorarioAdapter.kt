@@ -1,4 +1,4 @@
-package com.example.bellidolog.adapter
+package com.example.bellidolog.view.adapter
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -29,7 +29,8 @@ class HorarioAdapter(private val horarios: List<HorarioEntity>) : RecyclerView.A
                 "VIERNES" -> itemView.setBackgroundColor(Color.rgb(240, 178, 122))
             }
             tvCurso.text = horarios.asignacion.curso.nombre
-            tvDocente.text = horarios.asignacion.trabajador.nombre
+            val nombreDocente = "${horarios.asignacion.trabajador.nombre} ${horarios.asignacion.trabajador.apellidoPaterno}"
+            tvDocente.text = nombreDocente
             tvHoraInicio.text = horarios.horaInicio
             tvHoraFin.text = horarios.horaFin
             tvAula.text = horarios.seccion.aula.descripcion
