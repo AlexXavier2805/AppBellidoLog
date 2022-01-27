@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.bellidolog.adapter.CursoAdapter
+import com.example.bellidolog.view.adapter.CursoAdapter
 import com.example.bellidolog.databinding.FragmentCursoBinding
 import com.example.bellidolog.model.entity.CursoEntity
 import com.example.bellidolog.presenter.impl.CursoPresenterImpl

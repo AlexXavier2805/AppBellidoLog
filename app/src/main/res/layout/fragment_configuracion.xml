@@ -35,7 +35,7 @@
         android:textColorHint="#000000"
         android:textSize="20sp"
         android:background="@drawable/borde_input"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
     <androidx.legacy.widget.Space
         android:layout_width="0dp"
@@ -50,7 +50,7 @@
         android:textColorHint="#000000"
         android:textSize="20sp"
         android:background="@drawable/borde_input"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
     <androidx.legacy.widget.Space
         android:layout_width="0dp"
