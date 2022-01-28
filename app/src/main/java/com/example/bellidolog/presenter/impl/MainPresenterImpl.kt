@@ -7,7 +7,7 @@ import com.example.bellidolog.model.interactor.impl.MainInteractorImpl
 import com.example.bellidolog.presenter.MainPresenter
 import com.example.bellidolog.view.activity.MainActivityView
 
-class MainPresenterImpl(private val view: MainActivityView) : MainPresenter {
+class MainPresenterImpl(private val mainActivityView: MainActivityView) : MainPresenter {
 
     private val interactor = MainInteractorImpl(this)
 
@@ -20,19 +20,19 @@ class MainPresenterImpl(private val view: MainActivityView) : MainPresenter {
     }
 
     override fun obtenerToken(jwtResponse: JwtResponse?) {
-        view.obtenerToken(jwtResponse)
+        mainActivityView.obtenerToken(jwtResponse)
     }
 
     override fun tokenError(error: String) {
-        view.tokenError(error)
+        mainActivityView.tokenError(error)
     }
 
     override fun obtenerMatricula(matriculaEntity: MatriculaEntity?) {
-        view.obtenerMatricula(matriculaEntity)
+        mainActivityView.obtenerMatricula(matriculaEntity)
     }
 
     override fun matriculaError(error: String) {
-        view.matriculaError(error)
+        mainActivityView.matriculaError(error)
     }
 
 }

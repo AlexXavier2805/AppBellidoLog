@@ -28,5 +28,4 @@ class PerfilInteractorImpl(private val presenter: PerfilPresenterImpl) : PerfilI
             }
         })
     }
-
 }

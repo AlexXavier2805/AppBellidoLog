@@ -25,7 +25,6 @@ class CursoFragmentView : Fragment(), ICursoView {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = FragmentCursoBinding.inflate(inflater, container, false)
 
         binding.pbCurso.visibility = View.VISIBLE

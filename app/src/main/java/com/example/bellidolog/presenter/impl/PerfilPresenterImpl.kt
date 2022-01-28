@@ -5,7 +5,7 @@ import com.example.bellidolog.model.interactor.impl.PerfilInteractorImpl
 import com.example.bellidolog.presenter.PerfilPresenter
 import com.example.bellidolog.view.fragment.impl.PerfilFragmentView
 
-class PerfilPresenterImpl(private val view: PerfilFragmentView) :PerfilPresenter {
+class PerfilPresenterImpl(private val perfilFragmentView: PerfilFragmentView) :PerfilPresenter {
 
     private val interactor = PerfilInteractorImpl(this)
 
@@ -14,10 +14,10 @@ class PerfilPresenterImpl(private val view: PerfilFragmentView) :PerfilPresenter
     }
 
     override fun successful(msgSuccessful: String) {
-        view.successful(msgSuccessful)
+        perfilFragmentView.successful(msgSuccessful)
     }
 
     override fun error(msgError: String) {
-        view.error(msgError)
+        perfilFragmentView.error(msgError)
     }
 }

@@ -23,7 +23,6 @@ class MenuActivityView : AppCompatActivity() {
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //obteniendo el objeto matricula del serializableExtra
         matricula = intent.getSerializableExtra("matricula") as MatriculaEntity
 
         
@@ -78,7 +77,6 @@ class MenuActivityView : AppCompatActivity() {
         moveToFragment(fragment)
     }
 
-    //Metodo moveToFragment que sirve para abrir otro fragmento en la activity actual
     private fun moveToFragment(fragment: Fragment){
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.flContenedor,fragment)

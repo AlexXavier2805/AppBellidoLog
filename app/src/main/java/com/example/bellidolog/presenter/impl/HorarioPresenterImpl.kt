@@ -5,7 +5,7 @@ import com.example.bellidolog.model.interactor.impl.HorarioInteractorImpl
 import com.example.bellidolog.presenter.HorarioPresenter
 import com.example.bellidolog.view.fragment.impl.HorarioFragmentView
 
-class HorarioPresenterImpl(private val fragmentView: HorarioFragmentView) : HorarioPresenter {
+class HorarioPresenterImpl(private val horarioFragmentView: HorarioFragmentView) : HorarioPresenter {
 
     private val interactor = HorarioInteractorImpl(this)
 
@@ -14,10 +14,10 @@ class HorarioPresenterImpl(private val fragmentView: HorarioFragmentView) : Hora
     }
 
     override fun obtenerHorario(lista: List<HorarioEntity>?) {
-        fragmentView.obtenerHorario(lista)
+        horarioFragmentView.obtenerHorario(lista)
     }
 
     override fun horarioError(error: String) {
-        fragmentView.horarioError(error)
+        horarioFragmentView.horarioError(error)
     }
 }

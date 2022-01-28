@@ -24,7 +24,6 @@ class NotaFragmentView : Fragment(), INotaView {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = FragmentNotaBinding.inflate(inflater, container, false)
 
         binding.pbNotas.visibility = View.VISIBLE
@@ -38,7 +37,6 @@ class NotaFragmentView : Fragment(), INotaView {
 
         return binding.root
     }
-
 
     private fun buscarNotas(matriculaId: Int){
         val preferences = this.requireActivity().getSharedPreferences("MyPrefe", Context.MODE_PRIVATE)

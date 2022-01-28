@@ -5,7 +5,7 @@ import com.example.bellidolog.model.interactor.impl.ConfiguracionInteractorImpl
 import com.example.bellidolog.presenter.ConfiguracionPresenter
 import com.example.bellidolog.view.fragment.impl.ConfiguracionFragmentView
 
-class ConfiguracionPresenterImpl(private val view: ConfiguracionFragmentView) : ConfiguracionPresenter{
+class ConfiguracionPresenterImpl(private val configuracionFragmentView: ConfiguracionFragmentView) : ConfiguracionPresenter{
 
     private val interactor = ConfiguracionInteractorImpl(this)
 
@@ -14,11 +14,11 @@ class ConfiguracionPresenterImpl(private val view: ConfiguracionFragmentView) : 
     }
 
     override fun successful(msgSuccessful: String) {
-        view.successful(msgSuccessful)
+        configuracionFragmentView.successful(msgSuccessful)
     }
 
     override fun error(error: String) {
-        view.error(error)
+        configuracionFragmentView.error(error)
     }
 
 }

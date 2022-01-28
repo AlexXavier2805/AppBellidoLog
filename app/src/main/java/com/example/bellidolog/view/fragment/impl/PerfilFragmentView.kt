@@ -39,7 +39,6 @@ class PerfilFragmentView : Fragment(), IPerfilView {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = FragmentPerfilBinding.inflate(inflater,container,false)
 
         binding.btnSeleccionar.setOnClickListener { openGallery() }

@@ -24,7 +24,6 @@ class HorarioFragmentView : Fragment(), IHorarioView {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         binding = FragmentHorarioBinding.inflate(inflater, container, false)
 
         binding.pbHorario.visibility = View.VISIBLE
